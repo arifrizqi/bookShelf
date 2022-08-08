@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Bookshelf | Arif Rizqi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1 class="Bookshelf">Bookshelf v.1</h1>
+    <div class="contents" align="center">
+        <div class="child-content card shadow" id="add-todo">
+            <h2>Cari Buku</h2>
+            <hr>
+            <form id="cari-buku">
+                <div class="form-element">
+                    <input type="text" id="cari-judul" name="cari-judul" placeholder="Cari judul buku">
+                    <button id="tombol-cari-buku" type="submit">Cari</button>
+                </div>
+            </form>
+        </div>
+        <div class="child-content card shadow"" id="pencarian">
+            <h2>Masukan Buku Baru</h2>
+            <hr>
+            <form id="input-buku">
+                <div class="form-element">
+                    <label for="input-judul-buku">Judul</label>
+                    <input type="text" id="input-judul-buku" name="input-judul-buku" placeholder="Commic Marvel">
+                </div>
+                <div class="form-element">
+                    <label for="input-penulis-buku">Penulis</label>
+                    <input type="text" id="input-penulis-buku" name="input-penulis-buku" placeholder="Stan Lee">
+                </div>
+                <div class="form-element">
+                    <label for="input-tahun-buku">Tahun</label>
+                    <input type="number" id="input-tahun-buku" name="input-tahun-buku">
+                </div>
+                <div class="form-element">
+                    <label for="selesai-dibaca-check">Selesai Dibaca</label>
+                    <input type="checkbox" id="selesai-dibaca-check" name="selesai-dibaca-check">
+                </div>
+                <div class="form-element">
+                    <button id="submit-input-buku" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+                </div>
+            </form>
+        </div>
+        <div class="child-content card shadow"" id="belum">
+            <h2>Belum selesai dibaca</h2>
+            <hr>
+            <div class="list-item" id="todos"></div>
+        </div>
+        <div class="child-content card shadow"" id="selesai">
+            <h2>Selesai dibaca</h2>
+            <hr>
+            <div class="list-item" id="complated-todos"></div>
+        </div>
+    </div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
